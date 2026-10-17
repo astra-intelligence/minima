@@ -25,3 +25,12 @@ plugins:
 sass:
   quiet_deps: true
   silence_deprecations: [import]
+
+# Default social preview image for every page (jekyll-seo-tag emits
+# og:image + twitter:image from this). Pages can override with their own
+# `image:` front matter.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: og-image.png
